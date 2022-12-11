@@ -1,12 +1,11 @@
 def fibonacci(n):
-    a = 0
+    a = 1
     b = 1
-    if n < 0:
+    if n <= 0:
         print("Podaj liczbe dodatnia")
-    elif n == 0:
-        return a
+        exit()
     elif n == 1:
-        return b
+        return a
     else:
         for i in range(2, n):
             c = a + b
